@@ -1,4 +1,4 @@
-var ua = (function(u) {
+var ua = ((u) => {
 	var mobile = {
 		0: (u.indexOf("windows") != -1 && u.indexOf("phone") != -1)
 			|| u.indexOf("iphone") != -1
@@ -24,7 +24,7 @@ var ua = (function(u) {
 	};
 })(window.navigator.userAgent.toLowerCase());
 
-tm.main(function() {
+tm.main(() => {
     var app = tm.display.CanvasApp("#game-main");
     app.background = "#000";
     app.resize(1280, 720);
