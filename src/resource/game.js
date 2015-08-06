@@ -1,7 +1,5 @@
-var _ua = (function(u)
-{
-	var mobile =
-	{
+var ua = (function(u) {
+	var mobile = {
 		0: (u.indexOf("windows") != -1 && u.indexOf("phone") != -1)
 			|| u.indexOf("iphone") != -1
 			|| u.indexOf("ipod") != -1
@@ -19,21 +17,19 @@ var _ua = (function(u)
 		|| u.indexOf("silk") != -1
 		|| u.indexOf("playbook") != -1;
 	var pc = !mobile[0] && !tablet;
-	return
-	{
+	return {
 		Mobile: mobile,
 		Tablet: tablet,
 		PC: pc
 	};
 })(window.navigator.userAgent.toLowerCase());
 
-tm.main(function()
-{
+tm.main(function() {
     var app = tm.display.CanvasApp("#game-main");
     app.background = "#000";
     app.resize(1280, 720);
 	
-    if (_ua.PC === true)
+    if (ua.PC === true)
 	{
 
     }
