@@ -17,11 +17,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link href=resource/main.css rel=stylesheet type=text/css />
 	</head>
 	<body>
-		<div class=container style=width:970px>
-			<header>
-				This is main menu.
+		<div class=container id=main-container style=width:970px>
+			<header id=main-menu>
+				<div class=main-menu-label id=main-menu-home>
+					Home
+				</div>
+				<div class=main-menu-label id=main-menu-search>
+					Search
+					<div class=main-menu-content>
+
+					</div>
+				</div>
 			</header>
-			<main>
+			<main class=box>
 				<?php if (!$login) {
 				?><p>ようこそ、ゲストさん。ログインもしくは<a href=signup>サインアップ</a>してください。</p>
 				<form id=login-form>
@@ -33,15 +41,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php }else{
 				?><p>ようこそ、<?= $me['name']?>さん。</p>
 				<form id=logout-form>
-					<input type=submit value="ログアウト" />
+					<input type=submit class=button value="ログアウト" />
 					<label id=log-message></label>
 				</form>
 				<?php }
 			?></main>
-			<article id=new-score>
+			<article id=new-score class=box>
 				<p>contents none</p>
 			</article>
-			<footer>
+			<footer class=box>
 				<small>(c)2015 CrystalResonance.</small>
 			</footer>
 		</div>
