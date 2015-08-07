@@ -24,19 +24,55 @@ var ua = ((u) => {
 	};
 })(window.navigator.userAgent.toLowerCase());
 
+var SCREEN_WIDTH = 1280;              // スクリーン幅
+var SCREEN_HEIGHT = 720;              // スクリーン高さ
+var SCREEN_CENTER_X = SCREEN_WIDTH/2;   // スクリーン幅の半分
+var SCREEN_CENTER_Y = SCREEN_HEIGHT/2;  // スクリーン高さの半分
+
+var offset = $('#game-main').offset();
+var game-main-pos-initial-x = offset.left;
+var game-main-pos-initial-y = offset.top;
+
 tm.main(() => {
     var app = tm.display.CanvasApp("#game-main");
     app.background = "#000";
-    app.resize(1280, 720);
+    app.resize(SCREEN_WIDTH, SCREEN_HEIGHT);
+	app.fps = 60;
 	
-    if (ua.PC === true)
+    if (!!ua.PC)
 	{
-
+		app.replaceScene(LoadingScene());
     }
 	else
 	{
 		var label = tm.display.Label("PC端末からプレイしてください。").addChildTo(app.currentScene);
-    	label.setPosition(1280/2, 720/2);
+    	label.setPosition(SCREEN_CENTER_X, SCREEN_CENTER_Y);
     }
     app.run();
 });
+
+tm.define("LoadingScene",
+	superClass: "tm.app.Scene",
+
+	init: () => {
+		this.superInit();
+		
+	},
+
+	update: (app) => {
+		
+	}
+);
+
+tm.define("MainScene",
+	superClass: "tm.app.Scene",
+
+	init: () => {
+		this.superInit();
+		
+	},
+
+	update: (app) => {
+		
+	}
+);
