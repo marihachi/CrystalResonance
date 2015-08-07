@@ -23,16 +23,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</header>
 			<main>
 				<?php if (!$login) {
-				?><p>ようこそ、ゲストさん。ログインもしくはサインアップしてください。</p>
+				?><p>ようこそ、ゲストさん。ログインもしくは<a href=signup>サインアップ</a>してください。</p>
 				<form id=login-form>
 					<input type=text name=screen_name />
 					<input type=password name=password />
 					<input type=submit value="ログイン" />
+					<label id=log-message></label>
 				</form>
 				<?php }else{
 				?><p>ようこそ、<?= $me['name']?>さん。</p>
 				<form id=logout-form>
 					<input type=submit value="ログアウト" />
+					<label id=log-message></label>
 				</form>
 				<?php }
 			?></main>

@@ -70,7 +70,7 @@ class RankingAPIController extends CI_Controller
 
 		$info = array();
 		$post = $this->input->post();
-		if (array_key_exists('score_id', $post), array_key_exists('record_value', $post))
+		if (array_key_exists('score_id', $post) && array_key_exists('record_value', $post))
 		{
 			$this->load->model('Ranking_model', 'RankingModel', TRUE);
 

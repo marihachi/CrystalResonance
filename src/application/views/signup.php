@@ -22,9 +22,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<form id=signup-form>
 					<label for="screen-name-box">ユーザーID</label>
 					<input type=text name=screen_name id=screen-name-box />
+					<label for="name-box">名前</label>
+					<input type=text name=name id=name-box />
 					<label for="password-box">パスワード</label>
 					<input type=password name=password id=password-box />
 					<input type=submit value="サインアップ" />
+					<label id=log-message></label>
 				</form>
 			</main>
 			<footer>
