@@ -1,7 +1,49 @@
 body {
 	margin: 0;
+	background-color: lightseagreen;
 }
 
 p {
 	margin: 0;
+}
+
+#main-container {
+	padding-top: 25px;
+}
+
+.box {
+	background-color: rgba(255, 255, 255, .8);
+	border-radius: 5px;
+	margin: 5px;
+	padding: 10px 15px;
+}
+
+#main-menu {
+	position: fixed;
+	top: 0;
+}
+
+.button {
+	color: lightseagreen;
+	background-color: white;
+	border: 2px solid lightseagreen;
+	border-radius: 5px;
+	padding: 3px 10px;
+}
+.button-white:hover {
+	background-color: #EEE;
+	border: 2px solid lightseagreen;
+}
+
+.main-menu-label {
+	color: white;
+	display: inline-block;
+	border-radius: 0 0 8px 8px;
+	border: 2px solid white;
+	border-top: none;
+	padding: 0 10px;
+}
+
+.main-menu-content {
+	
 }
