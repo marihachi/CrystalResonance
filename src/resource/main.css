@@ -22,11 +22,6 @@ p {
 	padding: 10px 15px;
 }
 
-#main-menu {
-	position: fixed;
-	top: 0;
-}
-
 .button {
 	color: lightseagreen;
 	background-color: white;
@@ -34,20 +29,38 @@ p {
 	border-radius: 5px;
 	padding: 3px 10px;
 }
-.button-white:hover {
+.button:hover {
 	background-color: #EEE;
 	border: 2px solid lightseagreen;
 }
 
-.main-menu-label {
+#main-menu {
+	position: fixed;
+	top: 0;
+}
+
+.main-menu-item {
 	color: white;
-	display: inline-block;
-	border-radius: 0 0 8px 8px;
-	border: 2px solid white;
-	border-top: none;
+	position: absolute;
+}
+
+.main-menu-item-1 { left: calc(80px * 0); }
+.main-menu-item-2 { left: calc(80px * 1); }
+.main-menu-item-3 { left: calc(80px * 2); }
+
+.main-menu-tab {
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
 	padding: 0 10px;
+	border-radius: 0 0 8px 8px;
+	width: 80px;
+	text-align: center;
+	cursor: pointer;
+	background-color: lightseagreen;
 }
 
 .main-menu-content {
-	
+	display: none;
+	/*z-index: 1;*/
 }
