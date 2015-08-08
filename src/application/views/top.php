@@ -9,9 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta name=apple-mobile-web-app-capable content=yes />
 		<title>CrystalResonance</title>
 		<meta name=description content="ブラウザでプレイできる音楽ゲーム" />
-		<!-- jQuery -->
 		<script src=//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js></script>
-
 		<script src=resource/main.js></script>
 		<link href=resource/base.css rel=stylesheet type=text/css />
 		<link href=resource/main.css rel=stylesheet type=text/css />
