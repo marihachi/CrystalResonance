@@ -20,12 +20,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class=container style=width:970px>
 			<main>
 				<form id=signup-form>
-					<label for="screen-name-box">ユーザーID</label>
-					<input type=text name=screen_name id=screen-name-box />
-					<label for="name-box">名前</label>
-					<input type=text name=name id=name-box />
-					<label for="password-box">パスワード</label>
-					<input type=password name=password id=password-box />
+					<div>
+						<label for="screen-name-box">ユーザーID</label>
+						<input type=text name=screen_name id=screen-name-box />
+					</div>
+					<div>
+						<label for="name-box">名前</label>
+						<input type=text name=name id=name-box />
+					</div>
+					<div>
+						<label for="password-box">パスワード</label>
+						<input type=password name=password id=password-box />
+					</div>
 					<input type=submit value="サインアップ" />
 					<label id=log-message></label>
 				</form>
