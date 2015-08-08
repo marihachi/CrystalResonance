@@ -34,7 +34,7 @@ $(function() {
 			data: $(this).serialize(),
 			dataType: 'json',
 		}).done(function() {
-			location.href = "../";
+			location.href = baseUrl;
 		}).fail(function() {
 			$('#log-message').text("サインアップに失敗しました");
 		});
