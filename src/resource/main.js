@@ -48,13 +48,13 @@ $(function() {
 		{
 			targetContent.show(300);
 			$(this).parent().parent().find('.main-menu-content').not(targetContent).hide(300);
-			$(this).parent().css('x-index', 1);
-			$(this).parent().parent().find('.main-menu-content').parent().css('x-index', 0);
+			$(this).parent().css('z-index', 1);
+			$(this).parent().parent().find('.main-menu-content').parent().css('z-index', 0);
 		}
 		else
 		{
 			targetContent.hide(300);
-			$(this).parent().css('x-index', 0);
+			$(this).parent().css('z-index', 0);
 		}
 	});
 });
