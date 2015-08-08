@@ -13,7 +13,7 @@ class Account_model extends CI_Model
 		if(!$this->db->insert('crystal_resonance_account', $data))
 			return false;
 
-		$query = $this->db->get_where('crystal_resonance_accounts', array('screen_name' => $screen_name), 1);
+		$query = $this->db->get_where('crystal_resonance_account', array('screen_name' => $screen_name), 1);
 		return (array)$query->result()[0];
 	}
 
