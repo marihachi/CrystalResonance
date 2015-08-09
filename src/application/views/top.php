@@ -32,6 +32,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						Search
 					</div>
 				</div>
+				<div class="main-menu-item main-menu-item-3">
+					<div class=main-menu-content id=main-menu-search>
+						<form method=get action=search>
+							<input type=text name=q />
+						</form>
+					</div>
+					<div class=main-menu-tab>
+						Item1
+					</div>
+				</div>
+				<div class="main-menu-item main-menu-item-4">
+					<div class=main-menu-content id=main-menu-search>
+						<form method=get action=search>
+							<input type=text name=q />
+						</form>
+					</div>
+					<div class=main-menu-tab>
+						Item2
+					</div>
+				</div>
 			</header>
 			<main class=box>
 				<?php if (!$login) {

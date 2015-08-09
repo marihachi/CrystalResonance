@@ -44,17 +44,25 @@ $(function() {
 	// メインメニューのタブをクリック
 	$('.main-menu-tab').click(function() {
 		var targetContent = $(this).parent().find('.main-menu-content');
-		if(targetContent.is(':hidden'))
-		{
-			targetContent.show(300);
-			$(this).parent().parent().find('.main-menu-content').not(targetContent).hide(300);
-			$(this).parent().css('z-index', 1);
-			$(this).parent().parent().find('.main-menu-content').parent().css('z-index', 0);
-		}
-		else
+		if (targetContent.length === 0)
 		{
 			targetContent.hide(300);
 			$(this).parent().css('z-index', 0);
+		}
+		else
+		{
+			if(targetContent.is(':hidden'))
+			{
+				targetContent.show(300);
+				$(this).parent().parent().find('.main-menu-content').not(targetContent).hide(300);
+				$(this).parent().css('z-index', 1);
+				$(this).parent().parent().find('.main-menu-content').parent().css('z-index', 0);
+			}
+			else
+			{
+				targetContent.hide(300);
+				$(this).parent().css('z-index', 0);
+			}
 		}
 	});
 });
