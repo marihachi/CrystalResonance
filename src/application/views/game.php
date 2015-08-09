@@ -20,7 +20,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js></script>
 		<!-- tmlib.js -->
 		<script src=//cdn.rawgit.com/phi-jp/tmlib.js/0.3.0/build/tmlib.js></script>
-
 		<script src=resource/main.js></script>
 		<script src=resource/game.js></script>
 		<link href=resource/main.css rel=stylesheet type=text/css />
@@ -30,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<canvas id=game-main></canvas>
 		</main>
 		<div class=container style=width:970px>
-			<footer>
+			<footer class=box>
 				<small>(c)2015 CrystalResonance.</small>
 			</footer>
 		</div>

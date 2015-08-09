@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</head>
 	<body>
 		<div class=container style=width:970px>
-			<main>
+			<main class=box>
 				<form id=signup-form>
 					<div>
 						<label for="screen-name-box">ユーザーID</label>
@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<label id=log-message></label>
 				</form>
 			</main>
-			<footer>
+			<footer class=box>
 				<small>(c)2015 CrystalResonance.</small>
 			</footer>
 		</div>

@@ -29,10 +29,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</header>
-			<main>
+			<main class=box>
 				Search Result.
 			</main>
-			<footer>
+			<footer class=box>
 				<small>(c)2015 CrystalResonance.</small>
 			</footer>
 		</div>
