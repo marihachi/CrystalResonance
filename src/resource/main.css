@@ -44,10 +44,10 @@ p {
 	position: absolute;
 }
 
-.main-menu-item-1 { left: calc(80px * 0); }
-.main-menu-item-2 { left: calc(80px * 1); }
-.main-menu-item-3 { left: calc(80px * 2); }
-.main-menu-item-4 { left: calc(80px * 3); }
+.main-menu-item-1 { left: calc(90px * 0); }
+.main-menu-item-2 { left: calc(90px * 1); }
+.main-menu-item-3 { left: calc(90px * 2); }
+.main-menu-item-4 { left: calc(90px * 3); }
 
 .main-menu-tab {
 	border-left: 2px solid white;
