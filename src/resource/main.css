@@ -16,7 +16,7 @@ p {
 }
 
 .box {
-	background-color: rgba(255, 255, 255, .8);
+	background-color: rgba(255, 255, 255, .3);
 	border-radius: 5px;
 	margin: 5px;
 	padding: 10px 15px;
