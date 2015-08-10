@@ -81,8 +81,17 @@ form ul {
 	margin: 0;
 }
 
-form ul li {
+#main-menu > ul > li, form ul li {
 	list-style: none;
+}
+
+#main-menu > ul {
+	margin: 0;
+	padding: 0;
+}
+
+#main-menu > ul > li li {
+	list-style: disc;
 }
 
 #main-menu {
