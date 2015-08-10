@@ -55,15 +55,30 @@ $(function() {
 			{
 				var elseContent = $(this).parent().parent().find('.main-menu-content').not(targetContent);
 				var elseItem = elseContent.parent();
+				targetContent.children('.main-menu-content-inner').css('opacity', 0);
 				elseItem.css('z-index', 0);
 				$(this).parent().css('z-index', 1);
-				elseContent.hide(200);
-				targetContent.show(300);
+				elseContent.children('.main-menu-content-inner').animate({ opacity: '0' }, 300, function() {
+					elseContent.hide(400, function() {
+						targetContent.show(400, function() {
+							targetContent.children('.main-menu-content-inner').animate({ opacity: '1' }, 300);
+						});
+					});
+					/*var itemHeight = 0;
+					switch($('.main-menu-content').index(targetContent)) {
+						case 0: itemHeight = 77; break;
+						case 1: itemHeight = 70; break;
+					}
+					$('#main-menu').animate({ height: itemHeight+'px' }, 400);*/
+				});
 			}
 			else
 			{
-				targetContent.hide(200);
 				$(this).parent().css('z-index', 0);
+				targetContent.children('.main-menu-content-inner').animate({ opacity: '0' }, 300, function (){
+					targetContent.hide(400);
+					$('#main-menu').animate({ height: '90px' }, 400);
+				});
 			}
 		}
 	});

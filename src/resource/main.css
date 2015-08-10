@@ -4,7 +4,8 @@
 }
 
 .container {
-	position: absolute;
+	width: 970px;
+	position: relative;
 	right: 0;
 	left: 0;
 	margin: 0 auto;
@@ -13,14 +14,26 @@
 body {
 	margin: 0;
 	background-color: lightseagreen;
+	background: url("http://marihachi.php.xdomain.jp/crystal-resonance/resource/bg2.jpg") no-repeat fixed center center transparent;
 }
 
-a {
+.container a {
 	color: #477;
 }
 
-p {
-	margin: 0;
+.container p {
+	margin: 0 10px;
+}
+
+.container h1, .container h2 {
+	margin: 5px 0;
+}
+
+.container h1 {
+	font-size: 18px;
+}
+.container h2 {
+	font-size: 15px;
 }
 
 #main-container {
@@ -73,18 +86,17 @@ form ul li {
 }
 
 #main-menu {
-
+	height: 90px;
 }
 
 .main-menu-item {
-	display: inline-block;
-	vertical-align: top;
+	position: absolute;
 }
 
-.main-menu-item-1 { left: calc(140px * 0); }
-.main-menu-item-2 { left: calc(140px * 1); }
-.main-menu-item-3 { left: calc(140px * 2); }
-.main-menu-item-4 { left: calc(140px * 3); }
+.main-menu-item-1 { left: calc(140px * 1); }
+.main-menu-item-2 { left: calc(140px * 2); }
+.main-menu-item-3 { left: calc(140px * 3); }
+.main-menu-item-4 { left: calc(140px * 4); }
 
 .main-menu-tab, .main-menu-content {
 	background-color: rgba(255, 255, 255, .7);
@@ -119,6 +131,28 @@ form ul li {
 	padding-left: 20px;
 }
 
+.main-menu-content input[type="submit"] {
+	color: lightseagreen;
+	border: 2px solid lightseagreen;
+}
+.main-menu-content input[type="submit"]:hover {
+
+}
+
+.main-menu-content input[type="text"], .main-menu-content input[type="password"] {
+	color: lightseagreen;
+	border: 2px solid lightseagreen;
+}
+
 #main-menu-score-content {
 	width: 160px;
+}
+
+.main-menu-logo {
+	position: absolute;
+	width: 120px;
+	height: 90px;
+	background-image: url('logo.svg');
+	background-position: center;
+	background-size: 100%;
 }

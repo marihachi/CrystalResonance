@@ -15,7 +15,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</head>
 	<body>
 		<div class=container id=main-container style=width:970px>
-			<header id=main-menu>
+			<nav class=container id=main-menu>
+				<div class="main-menu-logo"></div>
 				<div class="main-menu-item main-menu-item-1">
 					<div class=main-menu-tab id=main-menu-home>
 						<a href=/crystal-resonance>ホームへ戻る</a>
@@ -23,10 +24,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="main-menu-item main-menu-item-2">
 					<div class=main-menu-content id=main-menu-search>
-						<form method=get action=search>
-							<input type=text name=q />
-							<input type=submit value="検索" />
-						</form>
+						<div class=main-menu-content-inner>
+							<form method=get action=search>
+								<input type=text name=q />
+								<input type=submit value="検索" />
+							</form>
+						</div>
 					</div>
 					<div class=main-menu-tab>
 						譜面を探す
@@ -34,30 +37,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="main-menu-item main-menu-item-3">
 					<div class=main-menu-content id=main-menu-score-content>
-						<ul>
-							<li>譜面を新規作成</li>
-							<li>譜面の管理画面へ</li>
-						</ul>
+						<div class=main-menu-content-inner>
+							<ul>
+								<li>譜面を作る</li>
+								<li>管理画面へ</li>
+							</ul>
+						</div>
 					</div>
 					<div class=main-menu-tab>
-						譜面管理
+						譜面の管理
 					</div>
 				</div>
-			</header>
+			</nav>
 			<main class=box>
+				<h1>新しいアカウントの情報を入力してください</h1>
 				<form id=signup-form>
-					<div class=input-group>
-						<label for="screen-name-box">ユーザーID</label>
-						<input type=text name=screen_name id=screen-name-box />
-					</div>
-					<div class=input-group>
-						<label for="name-box">名前</label>
-						<input type=text name=name id=name-box />
-					</div>
-					<div class=input-group>
-						<label for="password-box">パスワード</label>
-						<input type=password name=password id=password-box />
-					</div>
+					<ul>
+						<li><input type=text name=screen_name id=screen-name-box placeholder="ユーザーID" /></li>
+						<li><input type=text name=name id=name-box placeholder="名前" /></li>
+						<li><input type=password name=password id=password-box placeholder="パスワード" /></li>
+					</ul>
 					<input type=submit value="サインアップ" />
 					<label id=log-message></label>
 				</form>
