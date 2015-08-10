@@ -48,14 +48,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php if (!$login) {
 				?><p>ようこそ、ゲストさん。ログインもしくは<a href=signup>サインアップ</a>してください。</p>
 				<form id=login-form>
-					<div class=input-group>
-						<label for="screen-name-box">ユーザーID</label>
-						<input type=text name=screen_name id=screen-name-box />
-					</div>
-					<div class=input-group>
-						<label for="password-box">パスワード</label>
-						<input type=password name=password id=password-box />
-					</div>
+					<ul>
+						<li><input type=text name=screen_name id=screen-name-box placeholder="ユーザーID" /></li>
+						<li><input type=password name=password id=password-box placeholder="パスワード" /></li>
+					</ul>
 					<input type=submit value="ログイン" />
 					<label id=log-message></label>
 				</form>
