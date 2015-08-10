@@ -46,15 +46,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</header>
 			<main class=box>
 				<form id=signup-form>
-					<div>
+					<div class=input-group>
 						<label for="screen-name-box">ユーザーID</label>
 						<input type=text name=screen_name id=screen-name-box />
 					</div>
-					<div>
+					<div class=input-group>
 						<label for="name-box">名前</label>
 						<input type=text name=name id=name-box />
 					</div>
-					<div>
+					<div class=input-group>
 						<label for="password-box">パスワード</label>
 						<input type=password name=password id=password-box />
 					</div>

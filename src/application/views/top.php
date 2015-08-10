@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<label for="screen-name-box">ユーザーID</label>
 						<input type=text name=screen_name id=screen-name-box />
 					</div>
-					<div>
+					<div class=input-group>
 						<label for="password-box">パスワード</label>
 						<input type=password name=password id=password-box />
 					</div>

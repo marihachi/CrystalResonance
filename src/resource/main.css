@@ -19,10 +19,6 @@ p {
 	margin: 0;
 }
 
-.input-group label {
-	
-}
-
 #main-container {
 	padding-top: 40px;
 }
@@ -54,6 +50,11 @@ input[type="text"], input[type="password"] {
 	border-radius: 5px;
 	background-color: transparent;
 	padding: 4px 10px;
+}
+
+.input-group label {
+	width: 70px;
+	display: inline-block;
 }
 
 #main-menu {
