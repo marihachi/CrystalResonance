@@ -18,13 +18,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<header id=main-menu>
 				<div class="main-menu-item main-menu-item-1">
 					<div class=main-menu-tab id=main-menu-home>
-						ホームへ戻る
+						<a href=/crystal-resonance>ホームへ戻る</a>
 					</div>
 				</div>
 				<div class="main-menu-item main-menu-item-2">
 					<div class=main-menu-content id=main-menu-search>
 						<form method=get action=search>
 							<input type=text name=q />
+							<input type=submit value="検索" />
 						</form>
 					</div>
 					<div class=main-menu-tab>
@@ -32,13 +33,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 				<div class="main-menu-item main-menu-item-3">
-					<div class=main-menu-content id=main-menu-search>
-						<form method=get action=search>
-							<input type=text name=q />
-						</form>
+					<div class=main-menu-content id=main-menu-score-content>
+						<ul>
+							<li>譜面を新規作成</li>
+							<li>譜面の管理画面へ</li>
+						</ul>
 					</div>
 					<div class=main-menu-tab>
-						譜面を作る
+						譜面管理
 					</div>
 				</div>
 			</header>

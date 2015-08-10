@@ -70,6 +70,11 @@ input[type="text"], input[type="password"] {
 .main-menu-item-3 { left: calc(120px * 2); }
 .main-menu-item-4 { left: calc(120px * 3); }
 
+.main-menu-tab, .main-menu-content {
+	background-color: rgba(255, 255, 255, .7);
+	color: lightseagreen;
+}
+
 .main-menu-tab {
 	border-left: 2px solid white;
 	border-right: 2px solid white;
@@ -77,14 +82,26 @@ input[type="text"], input[type="password"] {
 	padding: 0 10px;
 	border-radius: 0 0 8px 8px;
 	min-width: 100px;
-	width: 100%;
 	text-align: center;
 	cursor: pointer;
-	background-color: rgba(255, 255, 255, .7);
+}
+
+.main-menu-tab a {
 	color: lightseagreen;
+	text-decoration: none;
 }
 
 .main-menu-content {
 	display: none;
-	/*z-index: 1;*/
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+}
+
+.main-menu-content ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+#main-menu-score-content {
+	width: 160px;
 }
