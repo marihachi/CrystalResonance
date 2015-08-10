@@ -43,20 +43,22 @@ $(function() {
 
 	// メインメニューのタブをクリック
 	$('.main-menu-tab').click(function() {
-		var targetContent = $(this).parent().find('.main-menu-content');
+		var targetContent = $(this).parent().children('.main-menu-content');
 		if (targetContent.length === 0)
 		{
-			targetContent.hide(300);
-			$(this).parent().css('z-index', 0);
+			$(this).parent().parent().find('.main-menu-content').hide(300);
+			$(this).parent().parent().find('.main-menu-content').parent().css('z-index', 0);
 		}
 		else
 		{
 			if(targetContent.is(':hidden'))
 			{
-				targetContent.show(300);
-				$(this).parent().parent().find('.main-menu-content').not(targetContent).hide(300);
+				var elseContent = $(this).parent().parent().find('.main-menu-content').not(targetContent);
+				var elseItem = elseContent.parent();
+				elseItem.css('z-index', 0);
 				$(this).parent().css('z-index', 1);
-				$(this).parent().parent().find('.main-menu-content').parent().css('z-index', 0);
+				elseContent.hide(300);
+				targetContent.show(300);
 			}
 			else
 			{
