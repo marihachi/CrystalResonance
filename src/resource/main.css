@@ -24,7 +24,7 @@ p {
 }
 
 #main-container {
-	padding-top: 40px;
+
 }
 
 .box {
@@ -56,6 +56,9 @@ input[type="text"], input[type="password"] {
 	padding: 4px 10px;
 }
 
+input::-webkit-input-placeholder { color: #ccc }
+input:-moz-placeholder { color: #ccc }
+
 form {
 	padding: 10px 5px;
 }
@@ -70,18 +73,18 @@ form ul li {
 }
 
 #main-menu {
-	position: fixed;
-	top: 0;
+
 }
 
 .main-menu-item {
-	position: absolute;
+	display: inline-block;
+	vertical-align: top;
 }
 
-.main-menu-item-1 { left: calc(120px * 0); }
-.main-menu-item-2 { left: calc(120px * 1); }
-.main-menu-item-3 { left: calc(120px * 2); }
-.main-menu-item-4 { left: calc(120px * 3); }
+.main-menu-item-1 { left: calc(140px * 0); }
+.main-menu-item-2 { left: calc(140px * 1); }
+.main-menu-item-3 { left: calc(140px * 2); }
+.main-menu-item-4 { left: calc(140px * 3); }
 
 .main-menu-tab, .main-menu-content {
 	background-color: rgba(255, 255, 255, .7);
@@ -94,7 +97,8 @@ form ul li {
 	border-bottom: 2px solid white;
 	padding: 0 10px;
 	border-radius: 0 0 8px 8px;
-	min-width: 100px;
+	min-width: 120px;
+	width: 100%;
 	text-align: center;
 	cursor: pointer;
 }
