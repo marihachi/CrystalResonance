@@ -18,7 +18,7 @@ body {
 }
 
 .container a {
-	color: #477;
+	color: #1CB9AD;
 }
 
 .container p {
@@ -71,8 +71,8 @@ input[type="text"], input[type="password"] {
 	margin: 2px 0;
 }
 
-input::-webkit-input-placeholder { color: #ccc }
-input:-moz-placeholder { color: #ccc }
+input::-webkit-input-placeholder { color: rgba(85, 85, 85, .5); }
+input:-moz-placeholder { color: rgba(85, 85, 85, .5); }
 
 form {
 	padding: 10px 5px;
