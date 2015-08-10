@@ -60,10 +60,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<canvas id=game-main></canvas>
 			</div>
 		</main>
-		<div class=container>
-			<footer class=box>
-				<small>(c)2015 CrystalResonance.</small>
-			</footer>
-		</div>
 	</body>
 </html>
