@@ -11,7 +11,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta name=description content="ブラウザでプレイできる音楽ゲーム" />
 		<script src=//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js></script>
 		<script src=resource/main.js></script>
-		<link href=resource/base.css rel=stylesheet type=text/css />
 		<link href=resource/main.css rel=stylesheet type=text/css />
 	</head>
 	<body>
@@ -19,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<header id=main-menu>
 				<div class="main-menu-item main-menu-item-1">
 					<div class=main-menu-tab id=main-menu-home>
-						Home
+						ホームへ戻る
 					</div>
 				</div>
 				<div class="main-menu-item main-menu-item-2">
@@ -29,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</form>
 					</div>
 					<div class=main-menu-tab>
-						Search
+						譜面を探す
 					</div>
 				</div>
 				<div class="main-menu-item main-menu-item-3">
@@ -39,17 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</form>
 					</div>
 					<div class=main-menu-tab>
-						Item1
-					</div>
-				</div>
-				<div class="main-menu-item main-menu-item-4">
-					<div class=main-menu-content id=main-menu-search>
-						<form method=get action=search>
-							<input type=text name=q />
-						</form>
-					</div>
-					<div class=main-menu-tab>
-						Item2
+						譜面を作る
 					</div>
 				</div>
 			</header>
@@ -71,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php }else{
 				?><p>ようこそ、<?= $me['name']?>さん。</p>
 				<form id=logout-form>
-					<input type=submit class=button value="ログアウト" />
+					<input type=submit value="ログアウト" />
 					<label id=log-message></label>
 				</form>
 				<?php }

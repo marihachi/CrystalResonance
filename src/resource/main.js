@@ -46,7 +46,7 @@ $(function() {
 		var targetContent = $(this).parent().children('.main-menu-content');
 		if (targetContent.length === 0)
 		{
-			$(this).parent().parent().find('.main-menu-content').hide(300);
+			$(this).parent().parent().find('.main-menu-content').hide(200);
 			$(this).parent().parent().find('.main-menu-content').parent().css('z-index', 0);
 		}
 		else
@@ -57,12 +57,12 @@ $(function() {
 				var elseItem = elseContent.parent();
 				elseItem.css('z-index', 0);
 				$(this).parent().css('z-index', 1);
-				elseContent.hide(300);
+				elseContent.hide(200);
 				targetContent.show(300);
 			}
 			else
 			{
-				targetContent.hide(300);
+				targetContent.hide(200);
 				$(this).parent().css('z-index', 0);
 			}
 		}

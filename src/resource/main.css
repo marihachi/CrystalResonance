@@ -1,3 +1,15 @@
+* {
+	font-family: "Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","Meiryo UI","Meiryo, メイリオ","sans-serif";
+	box-sizing: border-box;
+}
+
+.container {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
 body {
 	margin: 0;
 	background-color: lightseagreen;
@@ -12,26 +24,36 @@ p {
 }
 
 #main-container {
-	padding-top: 25px;
+	padding-top: 40px;
 }
 
 .box {
-	background-color: rgba(255, 255, 255, .3);
+	background-color: rgba(255, 255, 255, .1);
+	border: 2px solid rgba(255, 255, 255, .8);
 	border-radius: 5px;
-	margin: 5px;
+	margin: 10px 0;
 	padding: 10px 15px;
+	color: white;
 }
 
-.button {
-	color: lightseagreen;
-	background-color: white;
-	border: 2px solid lightseagreen;
+input[type="submit"] {
+	color: white;
+	border: 2px solid white;
+	background-color: transparent;
 	border-radius: 5px;
 	padding: 3px 10px;
 }
-.button:hover {
-	background-color: #EEE;
-	border: 2px solid lightseagreen;
+input[type="submit"]:hover {
+	color: rgba(255,255,255,.7);
+	border: 2px solid rgba(255,255,255,.7);
+}
+
+input[type="text"], input[type="password"] {
+	color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	background-color: transparent;
+	padding: 4px 10px;
 }
 
 #main-menu {
@@ -40,14 +62,13 @@ p {
 }
 
 .main-menu-item {
-	color: white;
 	position: absolute;
 }
 
-.main-menu-item-1 { left: calc(90px * 0); }
-.main-menu-item-2 { left: calc(90px * 1); }
-.main-menu-item-3 { left: calc(90px * 2); }
-.main-menu-item-4 { left: calc(90px * 3); }
+.main-menu-item-1 { left: calc(120px * 0); }
+.main-menu-item-2 { left: calc(120px * 1); }
+.main-menu-item-3 { left: calc(120px * 2); }
+.main-menu-item-4 { left: calc(120px * 3); }
 
 .main-menu-tab {
 	border-left: 2px solid white;
@@ -55,10 +76,12 @@ p {
 	border-bottom: 2px solid white;
 	padding: 0 10px;
 	border-radius: 0 0 8px 8px;
+	min-width: 100px;
 	width: 100%;
 	text-align: center;
 	cursor: pointer;
-	background-color: lightseagreen;
+	background-color: rgba(255, 255, 255, .7);
+	color: lightseagreen;
 }
 
 .main-menu-content {
