@@ -14,41 +14,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link href=resource/main.css rel=stylesheet type=text/css />
 	</head>
 	<body>
-		<div class=container id=main-container style=width:970px>
-			<nav class=container id=main-menu>
-				<div class="main-menu-logo"></div>
-				<div class="main-menu-item main-menu-item-1">
-					<div class=main-menu-tab id=main-menu-home>
-						<a href=/crystal-resonance>ホームへ戻る</a>
-					</div>
-				</div>
-				<div class="main-menu-item main-menu-item-2">
-					<div class=main-menu-content id=main-menu-search>
-						<div class=main-menu-content-inner>
-							<form method=get action=search>
-								<input type=text name=q />
-								<input type=submit value="検索" />
-							</form>
+		<header class=container>
+			<nav id=main-menu>
+				<ul class=main-menu-items>
+					<li class="main-menu-logo"></li>
+					<li class="main-menu-item main-menu-item-1">
+						<div class=main-menu-tab id=main-menu-home>
+							<a href=/crystal-resonance>ホームへ戻る</a>
 						</div>
-					</div>
-					<div class=main-menu-tab>
-						譜面を探す
-					</div>
-				</div>
-				<div class="main-menu-item main-menu-item-3">
-					<div class=main-menu-content id=main-menu-score-content>
-						<div class=main-menu-content-inner>
-							<ul>
-								<li>譜面を作る</li>
-								<li>管理画面へ</li>
-							</ul>
+					</li>
+					<li class="main-menu-item main-menu-item-2">
+						<div class=main-menu-content id=main-menu-search>
+							<div class=main-menu-content-inner>
+								<form method=get action=search>
+									<input type=text name=q />
+									<input type=submit value="検索" />
+								</form>
+							</div>
 						</div>
-					</div>
-					<div class=main-menu-tab>
-						譜面の管理
-					</div>
-				</div>
+						<div class=main-menu-tab>
+							譜面を探す
+						</div>
+					</li>
+					<li class="main-menu-item main-menu-item-3">
+						<div class=main-menu-content id=main-menu-score-content>
+							<div class=main-menu-content-inner>
+								<ul>
+									<li>譜面を作る</li>
+									<li>管理画面へ</li>
+								</ul>
+							</div>
+						</div>
+						<div class=main-menu-tab>
+							譜面の管理
+						</div>
+					</li>
+				</ul>
 			</nav>
+		</header>
+		<div class=container id=main-container>
 			<main class=box>
 				<h1>新しいアカウントの情報を入力してください</h1>
 				<form id=signup-form>
