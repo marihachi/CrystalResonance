@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title>CrystalResonance</title>
 		<meta name=description content="ブラウザでプレイできる音楽ゲーム" />
 		<script src=//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js></script>
-		<script src=//cdn.rawgit.com/phi-jp/tmlib.js/0.3.0/build/tmlib.js></script>
+		<script src=//cdn.rawgit.com/phi-jp/tmlib.js/0.5.0/build/tmlib.js></script>
 		<script src=/crystal-resonance/resource/main.js></script>
 		<script src=/crystal-resonance/resource/game.js></script>
 		<link href=/crystal-resonance/resource/main.css rel=stylesheet type=text/css />
