@@ -14,7 +14,7 @@
 body {
 	margin: 0;
 	background-color: lightseagreen;
-	background: url("http://marihachi.php.xdomain.jp/crystal-resonance/resource/bg2.jpg") no-repeat fixed center center transparent;
+	background: url("http://marihachi.php.xdomain.jp/crystal-resonance/resource/bg.jpg") no-repeat fixed center center transparent;
 }
 
 .container a {
@@ -41,32 +41,34 @@ body {
 }
 
 .box {
-	background-color: rgba(255, 255, 255, .1);
+	background-color: rgba(255, 255, 255, .6);
 	border: 2px solid rgba(255, 255, 255, .8);
 	border-radius: 5px;
 	margin: 10px 0;
 	padding: 10px 15px;
-	color: white;
+	color: rgb(85, 85, 85);
 }
 
 input[type="submit"] {
-	color: white;
-	border: 2px solid white;
+	color: rgb(85, 85, 85);
+	border: 2px solid rgb(58, 58, 58);
 	background-color: transparent;
 	border-radius: 5px;
 	padding: 3px 10px;
 }
 input[type="submit"]:hover {
-	color: rgba(255,255,255,.7);
-	border: 2px solid rgba(255,255,255,.7);
+	color: rgba(85, 85, 85, .7);
+	border: 2px solid rgba(85, 85, 85, .7);
+	margin-top: 2px;
 }
 
 input[type="text"], input[type="password"] {
-	color: white;
-	border: 2px solid white;
+	color: rgb(85, 85, 85);
+	border: 2px solid rgb(85, 85, 85);
 	border-radius: 5px;
 	background-color: transparent;
 	padding: 4px 10px;
+	margin: 2px 0;
 }
 
 input::-webkit-input-placeholder { color: #ccc }
