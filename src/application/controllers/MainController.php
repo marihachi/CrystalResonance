@@ -45,6 +45,7 @@ class MainController extends CI_Controller
 		{
 			show_error("Score Page Not Found.", 404);
 		}*/
-		echo "scoreId: $scoreId";
+		$this->load->view('game');
+		//echo "scoreId: $scoreId";
 	}
 }

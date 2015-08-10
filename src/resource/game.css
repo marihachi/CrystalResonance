@@ -1,9 +1,9 @@
-body {
-    background-color: #DDD;
+main {
+	padding: 15px 0;
 }
-
-#game-main {
-	position: absolute;
+.game-container {
+	width: 1280px;
+	position: relative;
 	top: 0;
 	right: 0;
 	bottom: 0;

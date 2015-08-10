@@ -1,4 +1,4 @@
-var ua = ((u) => {
+var ua = (function(u) {
 	var mobile = {
 		0: (u.indexOf("windows") != -1 && u.indexOf("phone") != -1)
 			|| u.indexOf("iphone") != -1
@@ -29,11 +29,13 @@ var SCREEN_HEIGHT = 720;              // スクリーン高さ
 var SCREEN_CENTER_X = SCREEN_WIDTH/2;   // スクリーン幅の半分
 var SCREEN_CENTER_Y = SCREEN_HEIGHT/2;  // スクリーン高さの半分
 
+/*
 var offset = $('#game-main').offset();
 var game-main-pos-initial-x = offset.left;
 var game-main-pos-initial-y = offset.top;
+*/
 
-tm.main(() => {
+tm.main(function() {
     var app = tm.display.CanvasApp("#game-main");
     app.background = "#000";
     app.resize(SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -51,28 +53,28 @@ tm.main(() => {
     app.run();
 });
 
-tm.define("LoadingScene",
+tm.define("LoadingScene", {
 	superClass: "tm.app.Scene",
 
-	init: () => {
+	init: function() {
 		this.superInit();
 		
 	},
 
-	update: (app) => {
+	update: function(app) {
 		
 	}
-);
+});
 
-tm.define("MainScene",
+tm.define("MainScene", {
 	superClass: "tm.app.Scene",
 
-	init: () => {
+	init: function() {
 		this.superInit();
 		
 	},
 
-	update: (app) => {
+	update: function(app) {
 		
 	}
-);
+});

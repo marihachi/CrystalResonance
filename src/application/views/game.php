@@ -11,9 +11,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta name=description content="ブラウザでプレイできる音楽ゲーム" />
 		<script src=//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js></script>
 		<script src=//cdn.rawgit.com/phi-jp/tmlib.js/0.3.0/build/tmlib.js></script>
-		<script src=resource/main.js></script>
-		<script src=resource/game.js></script>
-		<link href=resource/main.css rel=stylesheet type=text/css />
+		<script src=/crystal-resonance/resource/main.js></script>
+		<script src=/crystal-resonance/resource/game.js></script>
+		<link href=/crystal-resonance/resource/main.css rel=stylesheet type=text/css />
+		<link href=/crystal-resonance/resource/game.css rel=stylesheet type=text/css />
 	</head>
 	<body>
 		<header class=container>
@@ -54,10 +55,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</ul>
 			</nav>
 		</header>
-		<div class=container id=main-container>
-			<main>
+		<main>
+			<div class=game-container>
 				<canvas id=game-main></canvas>
-			</main>
+			</div>
+		</main>
+		<div class=container>
 			<footer class=box>
 				<small>(c)2015 CrystalResonance.</small>
 			</footer>
